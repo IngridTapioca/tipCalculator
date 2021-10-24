@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body {
+    background-color: #C5E4E7;
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+}
+
+.nameDiv {
+    background-color: transparent;
+    justify-content: center;
+    word-break: break-all;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-basis: center;
+    align-items: center;
+    color: #00494C;
+}
+
+.nameDiv p {
+    font-size: 40px;
+    font-weight: 600;
+    text-justify: center;
+    line-height: 40px;
+    width: 15%;
+    max-width: 200px;
+    letter-spacing: 0.5em;
+}
+.cardDiv {
+    background-color: white;
+    border-radius: 30px;
+    width: 1040px;
+    height:auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 200px auto;
+    justify-content: space-between;
+}
+
+.entryDiv {
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 1%;
+}
+
+#text {
+    font-size: 28px;
+    font-style: normal;
+    color: #00494C;
+}
+
+.billDiv {
+    background: #F4FAFA;
+    border: 1px solid #26C0AB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 1px;
+    width: 99%;
+    height: 50px;
+    margin: 1px;
+    
+}
+
+.selectTipDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+.tipDiv {
+    width: 140px;
+    height: 50px;
+    background: #00494C;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.tipDivDefaut {
+    width: 140px;
+    height: 50px;
+    background: #26C0AB;
+    border-radius: 5px;
+    color: #00494C;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.tipDivCustom {
+    width: 140px;
+    height: 50px;
+    background: #F4FAFA;
+    border: 1px solid #26C0AB;
+    border-radius: 5px;
+    color: #00494C;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+
+
+
+
+.returnDiv {
+    background-color: #00494C;
+    border-radius: 15px;
+    font-size: 28px;
+    color: white;
+    width: 48%;
+    height: auto;
+    display: flex;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#text .text {
+    margin: 10px;
+    color: white;
+
+}
+
+.results {
+    color: #26C0AB;
+    font-size: 50px;
+    font-weight: bold;
+    align-content: flex-end;
+    align-self: flex-end;
+
+}
+
+.resetBtt {
+    width: 240px;
+    height: 50px;
+    background: #26C0AB;
+    border-radius: 5px;
+    color: #00494C;
+    font-weight: 700;
+    margin: 10px;
+    align-self: center;
+}
+
+.resultRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    align-self: center;
+    font-family: 'Space Mono', monospace;
+/* opacity: 1;  Firefox 
+    :-ms-input-placeholder { /* Internet Explorer 10-11 
+  color: red;
+}
+::-ms-input-placeholder { /* Microsoft Edge 
+  color: red;
+}    */
+  }
