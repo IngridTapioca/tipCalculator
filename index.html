@@ -1,53 +1,64 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Tip Calculator</title>
-    </head>
-    <body>
-        <div class="nameDiv">
-            <p>SPLITTER</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="nameDiv">
+      <p>SPLITTER</p>
+    </div>
+    <div class="cardDiv">
+      <div class="entryDiv">
+        <p id="text">Bill</p>
+        <input
+          onchange="setBill(this.value)"
+          type="number"
+          class="billDiv"
+          placeholder="$"
+        />
+        <p id="text">Select Tip %</p>
+        <div class="selectTipDiv">
+          <button onclick="setTip(5)" class="tipDiv">5%</button>
+          <button onclick="setTip(10)" class="tipDivDefaut">10%</button>
+          <button onclick="setTip(15)" class="tipDiv">15%</button>
+          <button onclick="setTip(25)" class="tipDiv">25%</button>
+          <button onclick="setTip(50)" class="tipDiv">50%</button>
+          <input
+            onchange="setTip(this.value)"
+            class="tipDivCustom"
+            placeholder="Custom"
+          />
         </div>
-        <div class="cardDiv">
-            
-            <div class="entryDiv">
-                <p id="text">Bill</p>
-                <input onchange="setBill(this.value)" type="number" class="billDiv" placeholder="$" >
-                <p id="text">Select Tip %</p>
-                <div class="selectTipDiv">
-                    <button onclick="setTip(5)" class="tipDiv">5%</button>
-                    <button onclick="setTip(10)" class="tipDivDefaut">10%</button>
-                    <button onclick="setTip(15)" class="tipDiv">15%</button>
-                    <button onclick="setTip(25)" class="tipDiv">25%</button>
-                    <button onclick="setTip(52)" class="tipDiv">50%</button>
-                    <input onchange="setTip(this.value)" class="tipDivCustom" placeholder="Custom">
-                </div>
-                <p id="text">Number of People</p>
-                <input onchange="calculate(this.value)" type="number" class="billDiv" placeholder="👤" >
-            </div>
+        <p id="text">Number of People</p>
+        <input
+          onchange="calculate(this.value)"
+          type="number"
+          class="billDiv"
+          placeholder="👤"
+        />
+      </div>
 
-            <div class="returnDiv">
-                <div class="resultRow">
-                    <div class="text">
-                        <p>Tip Amount</p>
-                        <p style="color:#7F9C9F">/ person</p>
-                    </div>
-                    <div class="results" id="result1"></div>
-                </div>
-                <div class="resultRow">
-                    <div class="text">
-                        <p>Total</p>
-                        <p style="color:#7F9C9F">/ person</p>
-                    </div>
-                    <div class="results" id="result2"></div>
-                </div>
-                <button type="reset" class="resetBtt">RESET</button>
-                
-            </div>
-
+      <div class="returnDiv">
+        <div class="resultRow">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p style="color: #7f9c9f">/ person</p>
+          </div>
+          <div class="results" id="result1"></div>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div class="resultRow">
+          <div class="text">
+            <p>Total</p>
+            <p style="color: #7f9c9f">/ person</p>
+          </div>
+          <div class="results" id="result2"></div>
+        </div>
+        <button type="reset" class="resetBtt">RESET</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
